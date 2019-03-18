@@ -1,0 +1,127 @@
+@font-face {
+  font-weight: normal;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/oswald-regular.woff2") format("woff2"), url("../fonts/oswald-regular.woff") format("woff");
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 320px;
+  min-height: 100vh;
+  font-size: 14px;
+  line-height: 1.375em;
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
+  color: #111111;
+  font-style: normal;
+
+  background-color: #ffffff;
+
+  
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  transition-duration: 0.2s;
+}
+
+*::after,
+*::before {
+  transition-duration: 0.2s;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@mixin reset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+@media (min-width: $tablet-width) {
+  h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  
+  h2 {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+  }
+  
+  h3 {
+    font-size: 36px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+
+}

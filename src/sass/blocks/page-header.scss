@@ -1,0 +1,245 @@
+.page-header {
+   margin: 0;
+   margin-bottom: 22px;
+   padding: 0;
+ }
+
+.page-header__wrapper {
+  margin: 0 auto;
+  max-width: 420px;
+}
+
+.page-header__inner {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.page-header__top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.page-header__top-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-header__logo-addit {
+  display: none;
+}
+
+.page-header__mobile-toggle {
+  display: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 18px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  span:first-child {
+    display: block;
+    height: 2px;
+    flex-grow: 1;
+    background-color: #222222;
+    box-shadow: 
+      0 6px 0 #222222,
+      0 -6px 0 #222222;
+  }
+}
+
+
+.page-header__bottom-inner {
+  padding-top: 28px;
+  background-image: url('../img/index-background-mobile.png');
+  background-repeat: no-repeat;
+  background-position-y: 0%;
+  background-position-x: center;
+  background-size: 100%;
+  border-bottom: 1px solid transparent;
+}
+
+.page-header__bottom-inner2 {
+  margin-top: -140px;
+  height: 314px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url('../img/index-can-mobile.png');
+  background-repeat: no-repeat;
+  background-position-y: 0%;
+  background-position-x: center;
+  background-size: auto;
+}
+
+.page-header__title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 400;
+}
+
+.page-header__slogan {
+  margin: 0;
+  margin-bottom: 168px;
+  padding: 0;
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.page-header__button {
+  margin: 0 20px;
+}
+
+
+@media (max-width: $mobile-width-only) {
+  .page-header__top-container {
+    padding: 0 20px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .page-header__top-inner {
+    min-height: 66px;
+    margin: 0 -20px;
+    padding: 0 20px;
+    box-shadow: 0 1px 0 #e6e6e6;
+    margin-bottom: 1px;
+  }
+
+  .page-header__logo {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .page-header__logo-addit {
+    display: block;
+  }
+
+  .page-header__mobile-toggle {
+    display: flex;
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    margin-bottom: 0;
+  }
+  .page-header__wrapper {
+    max-width: 1249px;
+    max-width: 1024px;
+  }
+  .page-header__inner {
+    padding: 0 30px;
+  }
+
+  .page-header__top-container {
+    padding-top: 24px;
+  }
+
+  .page-header__logo {
+    display: block;
+    img {
+      width: 173px;
+      height: auto;
+    }
+  }
+
+  .page-header__bottom-inner {
+    padding-top: 60px;
+    background-image: none;
+  }
+  .page-header__bottom-inner2 {
+    margin: 0;
+    padding-top: 27px;
+    background-image: url('../img/index-can-tablet.png');
+    height: 608px;
+    justify-content: flex-start;
+  }
+
+  .page-header__title {
+    padding: 0;
+    margin-left: 90px;
+    margin-bottom: 35px;
+    width: 427px;
+    color: #111111;
+    text-align: left;
+  }
+
+  .page-header__slogan {
+    margin-left: 90px;
+    margin-bottom: 15px;
+    width: 427px;
+    color: #111111;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .page-header__button {
+    margin-left: 90px;
+    margin-right: 0;
+    width: 245px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    margin-bottom: 80px;
+  }
+  
+  .page-header__wrapper {
+    padding: 0;
+    max-width: 1440px;
+    background-image: url('../img/index-background-desktop.png');
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+  }
+
+  .page-header__inner {
+    padding: 0 40px;
+    max-width: 1300px;
+  }
+
+  .page-header__top-container {
+    padding-top: 50px;
+  }
+
+  .page-header__bottom-container {
+    background-image: url('../img/index-can.png');
+    background-repeat: no-repeat;
+    background-position-x: 68%;
+    background-position-y: 30px;
+    height: 582px;
+
+  }
+
+  .page-header__bottom-inner {
+    padding-top: 110px;
+  }
+
+  .page-header__bottom-inner2 {
+    background-image: none;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    display: block;
+  }
+
+  .page-header__slogan {
+    margin-bottom: 50px;
+  }
+
+}

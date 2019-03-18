@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cat Energy - Подобрать программу питания для кота</title>
+</head>
+<body>
+
+  
+
+  <div class="page-content">
+    <section class="page-form">
+      <h1 class="page-form__title">Подбор программы</h1>
+      <p class="page-form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+
+      <form action="/" class="page-form__form selection-form">
+        <fieldset class="selection-form__basic">
+          <div>
+            <label>Имя:<sup>*</sup><input type="text" name="name"></label>
+            <label>Вес (кг):<sup>*</sup><input type="number" name="weight"></label>
+            <label>Возраст (лет):<input type="number" name="age"></label>
+          </div>
+          <div>
+            <label class="selection-form__radio"><input class="visually-hidden" type="radio" name="task">Похудение</label>
+            <label class="selection-form__radio"><input class="visually-hidden" type="radio" name="task">Набор массы</label>
+            <label class="selection-form__radio"><input class="visually-hidden" type="radio" name="task">Не знаю (нужен ваш совет)</label>
+          </div>
+        </fieldset>
+        <fieldset class="selection-form__contacts">
+          <legend class="selection-form__subtitle">Контактные данные (владельца кота)</legend>
+          <label>E-mail:<sup>*</sup><input type="email" placeholder="kuklachev@gmail.com"><span></span></label>
+          <label>Телефон:<sup>*</sup><input type="number" placeholder="8 (960) 900-60-90"><span></span></label>
+        </fieldset>
+        <fieldset class="selection-form__comment">
+          <legend class="selection-form__subtitle">Комментарий</legend>
+          <textarea placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+        <fieldset class="selection-form__additionally">
+          <legend class="selection-form__subtitle">Дополнительно</legend>
+          <div>
+            <label class="selection-form__checkbox"><input class="visually-hidden" type="checkbox">Сахарозаменитель</label>
+            <label class="selection-form__checkbox"><input class="visually-hidden" type="checkbox">Питьевая вода</label>
+            <label class="selection-form__checkbox"><input class="visually-hidden" type="checkbox">Молоко</label>
+            <label class="selection-form__checkbox"><input class="visually-hidden" type="checkbox">Витамины</label>
+          </div>
+        </fieldset>
+        <button class="button selection-form__button" type="submit">Отправить заявку</button>
+        <span class="selection-form__footnote"><sup>*</sup> — Обязательные поля</span>
+      </form>
+    </section>
+  </div>
+  
+</body>
+</html>

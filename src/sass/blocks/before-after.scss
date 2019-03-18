@@ -1,0 +1,223 @@
+.before-after {
+  background-color: #ececec;
+}
+
+.before-after__wrapper {
+  padding: 0 20px;
+  padding-bottom: 38px;
+  padding-top: 35px;
+
+  // background-color: burlywood;
+}
+
+.before-after__container {
+  padding: 33px 0;
+}
+
+.before-after__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.before-after__solution {
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 0;
+  color: #444444;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.before-after__results {
+  @include reset-list;
+  margin-bottom: 38px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.before-after__result {
+  position: relative;
+  width: 124px;
+  height: 56px;
+  border-radius: 3px;
+  border: 1px solid #cdcdcd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  em {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    font-style: normal;
+    text-transform: uppercase;
+  }
+  span {
+    position: absolute;
+    display: block;
+    padding: 0 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    color: #444444;
+    text-align: center;
+    width: 87px;
+    left: calc(50% - 43.5px);
+    bottom: -17px;
+    background-color: #ececec;
+  }
+}
+
+.before-after__spend {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+@media (min-width: $tablet-width) {
+  .before-after {
+    background-color: #ffffff;
+  }
+
+  .before-after__wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .before-after__title {
+    padding: 0 30px;
+  }
+
+  .before-after__description {
+    padding: 0 30px;
+  }
+
+  .before-after__results-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .before-after__result {
+    width: 162px;
+    height: 72px;
+    margin-right: 40px;
+
+    em {
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    span {
+      font-size: 14px;
+      line-height: 14px;
+      width: auto;
+      padding: 0 8px;
+      left: auto;
+      bottom: -7px;
+      background-color: #ffffff;
+    }
+  }
+
+  .before-after__spend {
+    text-align: right;
+    font-size: 20px;
+    line-height: 30px;
+    width: 192px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  
+  .before-after__wrapper {
+    max-width: 1440px;
+    padding-bottom: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom, transparent 204px, #f2f2f2 204px);
+    
+  }
+
+  .before-after__inner {
+    max-width: 1300px;
+    height: 670px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .before-after__description {
+    padding: 0 40px;
+    padding-bottom: 70px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-size: contain;
+  }
+
+  .before-after__title {
+    padding: 72px 0;
+    margin-bottom: 74px;
+    
+  }
+
+  .before-after__solution {
+    margin-bottom: 70px;
+  }
+
+  .before-after__results-wrapper {
+    margin-bottom: 0;
+    margin-top: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .before-after__results {
+    margin-bottom: 60px;
+  }
+
+  .before-after__result {
+    span {
+      background-color: #f2f2f2;
+    }
+  }
+
+  .before-after__spend {
+    margin: 0;
+    width: 100%;
+    flex-grow: 1;
+    text-align: left;
+    display: flex;
+
+    span:first-child {
+      margin-right: 64px;
+    }
+  }
+
+  .before-after__slider-container {
+    width: 50%;
+    
+  }
+
+  .before-after__slider {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  
+}
+

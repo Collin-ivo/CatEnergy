@@ -1,0 +1,38 @@
+.page-content {
+  margin: 0;
+  padding: 0;
+}
+
+.page-content__wrapper {
+  margin: 0 auto;
+  max-width: 420px;
+}
+
+.page-content__inner {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .page-content__wrapper {
+    max-width: 1024px;
+  }
+  .page-content__inner {
+    padding: 0 30px;
+    max-width: 1249px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .page-content__wrapper {
+    padding: 0;
+    max-width: 1440px;
+  }
+
+  .page-content__inner {
+    padding: 0 40px;
+    max-width: 1300px;
+  }
+}
