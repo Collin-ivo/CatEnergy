@@ -1,11 +1,6 @@
 .selection-form {
   margin: 0;
 
-  legend {
-    font-size: 24px;
-    line-height: 24px;
-  }
-
   label {
     font-size: 16px;
     line-height: 18px;
@@ -112,6 +107,8 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  font-size: 24px;
+  line-height: 24px;
   span {
     display: block;
     margin-right: 22px;
@@ -170,7 +167,7 @@
   border: none;
 
   
-  legend > span {
+  .selection-form__subtitle > span {
     flex-basis: 185px;
   }
 
@@ -233,12 +230,6 @@
   .selection-form {
     margin: 0 -30px;
     padding: 0 30px;
-    // background-color: aquamarine;
-
-    legend {
-      font-size: 36px;
-      line-height: 36px;
-    }
 
     label {
       font-size: 20px;
@@ -266,6 +257,8 @@
 
   .selection-form__subtitle {
     margin-bottom: 70px;
+    font-size: 36px;
+    line-height: 36px;
     span {
       margin-right: 40px;
       margin-left: 40px;
@@ -286,7 +279,7 @@
   .selection-form__contacts {
     margin: 0 -30px;
     margin-bottom: 50px;
-    legend > span {
+    .selection-form__subtitle > span {
       flex-basis: auto;
     }
 
