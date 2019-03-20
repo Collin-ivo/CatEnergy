@@ -71,6 +71,7 @@
       display: block;
     }
   }
+
 }
 
 @media (min-width: $desktop-width) {
@@ -80,6 +81,15 @@
     }
     a {
       color: #ffffff;
+    }
+  }
+
+  .main-nav--inner-page .main-nav__item {
+    &::after {
+      background-color: #68b738;
+    }
+    a {
+      color: #111111;
     }
   }
 }

@@ -2,6 +2,10 @@
    margin: 0;
    margin-bottom: 22px;
    padding: 0;
+
+   &--inner-page {
+     margin-bottom: 0;
+   }
  }
 
 .page-header__wrapper {
@@ -101,6 +105,7 @@
 }
 
 
+
 @media (max-width: $mobile-width-only) {
   .page-header__top-container {
     padding: 0 20px;
@@ -137,7 +142,6 @@
     margin-bottom: 0;
   }
   .page-header__wrapper {
-    max-width: 1249px;
     max-width: 1024px;
   }
   .page-header__inner {
@@ -240,6 +244,10 @@
 
   .page-header__slogan {
     margin-bottom: 50px;
+  }
+
+  .page-header--inner-page .page-header__wrapper {
+    background-image: none;
   }
 
 }
