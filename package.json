@@ -18,6 +18,7 @@
     "browser-sync": "^2.24.7",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
+    "gulp-better-rollup": "^4.0.1",
     "gulp-csso": "^3.0.1",
     "gulp-htmlmin": "^5.0.1",
     "gulp-plumber": "1.2.x",
@@ -25,15 +26,17 @@
     "gulp-posthtml": "3.0.4",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "4.0.x",
+    "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.1",
     "postcss-reporter": "^6.0.0",
     "postcss-scss": "^2.0.0",
     "posthtml-include": "1.2.x",
     "pump": "^3.0.0",
+    "rollup": "^1.7.4",
     "stylelint": "^9.6.0",
     "stylelint-config-htmlacademy": "0.1.x",
-    "uglify-js": "^3.4.9",
-    "svgxuse": "1.2.6"
+    "svgxuse": "1.2.6",
+    "uglify-js": "^3.4.9"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",

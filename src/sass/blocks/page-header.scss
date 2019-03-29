@@ -31,6 +31,17 @@
   align-items: center;
 }
 
+.page-header__logo,
+.page-header__logo-addit {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .page-header__logo-addit {
   display: none;
 }
@@ -48,13 +59,35 @@
 
   span:first-child {
     display: block;
-    height: 2px;
     flex-grow: 1;
+    position: relative;
+    height: 2px;
     background-color: #222222;
+    transform: rotate(45deg);
+    transition: 0.5s;
+  }
+  span:first-child::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(-90deg);
+    width: 24px;
+    height: 2px;
+    background-color: #222222;
+  }
+  &--closed {
+    span:first-child::after {
+      display: none;
+    }
+    span:first-child {
+      transform: rotate(0);
     box-shadow: 
       0 6px 0 #222222,
       0 -6px 0 #222222;
   }
+  }
+  
 }
 
 

@@ -75,6 +75,8 @@
     background-image: url('../img/right-arrow-long.png');
     background-repeat: no-repeat;
     background-position: center;
+    
+    transition-duration: 0.5s;
   }
 
   &:hover span,

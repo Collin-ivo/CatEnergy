@@ -8,6 +8,32 @@
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+  
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active span {
+    opacity: 0.3;
+  }
+
+  &--green {
+    background-color: #68b738;
+    &:hover,
+    &:focus {
+      background-color: #5eaa2f;
+    }
+  }
+
+  &--grey {
+    background-color: #f2f2f2;
+    color: #444444;
+    &:hover,
+    &:focus {
+    background-color: #ebebeb;
+  }
+  } 
 }
 
 
